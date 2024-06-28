@@ -1,0 +1,40 @@
+- class_name: 友情链接
+  class_desc: 那些人，那些事
+  link_list:
+    - name: LuoZero
+      link: http://www.llq666.site/
+      avatar: http://www.llq666.site/upload/7c283ade-2402-416a-bf99-9a9a5a60962b.png
+      descr: 和光同尘，与时舒卷
+    - name: Yolo
+      link: https://newforyou.github.io/blog/
+      avatar: https://avatars.githubusercontent.com/u/77427255?v=4
+      descr: You only live once
+
+- class_name: 学习网站
+  class_desc: 值得推荐的计算机学习网站
+  link_list:
+    - name: 深度学习
+      link: https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497
+      avatar: https://i0.hdslb.com/bfs/face/15afabcda93279a5ab2f736513ad112e836a9701.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif
+      descr: 李牧经典课程
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网志框架
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+
+- class_name: 参考博客
+  class_desc: 在学习之旅所遇到的人
+  link_list:
+  - name: 竹山一叶
+    link: https://zsyyblog.com
+    avatar: https://img.zsyyblog.com/favicon.jpg
+    descr: 来了就不想走的小家
+    siteshot: https://img.zsyyblog.com/siteshot.png
+  - name: Nick Xu
+    link: https://nickxu.me/
+    avatar: https://nickxu.me/static/favicon.jpg
+    descr: 这家伙真勤奋，什么都留下了
