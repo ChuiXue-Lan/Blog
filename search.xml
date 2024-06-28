@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>测试文章</title>
+      <link href="/Blog/2024/06/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+      <url>/Blog/2024/06/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\Blog\css\APlayer.min.css"><script src="\Blog\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\Blog\js\Meting.min.js"></script><p>这是一篇测试文章</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>YOLOv8-使用服务器训练模型</title>
       <link href="/Blog/2024/06/28/YOLOv8-%E4%BD%BF%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/"/>
       <url>/Blog/2024/06/28/YOLOv8-%E4%BD%BF%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/</url>
