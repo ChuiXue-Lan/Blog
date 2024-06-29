@@ -3,8 +3,9 @@ title: YOLOv8 - 环境配置
 date: 2024-06-28T13:25:53+08:00
 tags: YOLOv8
 categories: Computer Vision
+cover: /img/background2.jpg
 description: 在PyTorch虚拟环境中配置YOLOv8，进行每个步骤请仔细阅读本文档！
-cover: /img/cover1.jpg
+series: YOLOv8(1)
 ---
 > 本文内容：在PyTorch虚拟环境中配置YOLOv8，进行每个步骤请仔细阅读本文档！
 

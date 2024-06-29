@@ -5,6 +5,7 @@ tags: YOLOv8
 categories: Computer Vision
 cover: /img/cover1.jpg
 description: 使用恒源云服务器训练模型
+series: YOLOv8(2)
 ---
 训练网站：
 [恒源云_GPUSHARE-恒源智享云](https://www.gpushare.com/center/console)

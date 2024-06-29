@@ -5,6 +5,7 @@ tags: YOLOv8
 categories: Computer Vision
 cover: /img/cover1.jpg
 description: 建立属于自己的数据集，并在其基础上进行训练
+series: YOLOv8(3)
 ---
 参考视频：<br />[【yolov8】从0开始搭建部署YOLOv8，环境安装+推理+自定义数据集搭建与训练，一小时掌握_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fY411y7Xq/)
 > 本文参考以上视频第5部分
