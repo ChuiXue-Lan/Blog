@@ -7,7 +7,7 @@
 }
 
 /* 标题易读 */
-#article-container h1:before {
+/* #article-container h1:before {
   font-family: "iconfont";
   content: \&\#xe615; /*阿里图标的Unicode*/
 }
@@ -15,7 +15,7 @@
 #article-container h2:before {
   font-family: "iconfont";
   content: \&\#xe609;; /*阿里图标的Unicode*/
-}
+} */
 
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
