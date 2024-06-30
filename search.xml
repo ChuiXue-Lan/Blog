@@ -4,17 +4,23 @@
   
     
     <entry>
-      <title>测试文章</title>
-      <link href="/Blog/2024/06/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
-      <url>/Blog/2024/06/28/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+      <title>本站的阅读指南</title>
+      <link href="/Blog/2024/06/30/%E7%9B%AE%E5%BD%95/"/>
+      <url>/Blog/2024/06/30/%E7%9B%AE%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\Blog\css\APlayer.min.css"><script src="\Blog\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\Blog\js\Meting.min.js"></script><h1 id="2024-6-29"><a href="#2024-6-29" class="headerlink" title="2024&#x2F;6&#x2F;29"></a>2024&#x2F;6&#x2F;29</h1><p>这是一篇测试文章</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\Blog\css\APlayer.min.css"><script src="\Blog\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\Blog\js\Meting.min.js"></script><h1 id="Computer-Vision"><a href="#Computer-Vision" class="headerlink" title="Computer Vision"></a>Computer Vision</h1><h2 id="YOLOv8的使用"><a href="#YOLOv8的使用" class="headerlink" title="YOLOv8的使用"></a>YOLOv8的使用</h2><ul><li><a href="http://localhost:4000/Blog/2024/06/28/YOLOv8-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a></li><li><a href="http://localhost:4000/Blog/2024/06/28/YOLOv8-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E9%9B%86%E5%B9%B6%E8%AE%AD%E7%BB%83/">自定义数据集并训练</a></li><li><a href="http://localhost:4000/Blog/2024/06/28/YOLOv8-%E4%BD%BF%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/">使用服务器训练模型</a></li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> test </tag>
+            <tag> 阅读指南 </tag>
             
         </tags>
       
