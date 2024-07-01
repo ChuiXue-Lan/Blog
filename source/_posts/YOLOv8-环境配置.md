@@ -78,7 +78,7 @@ print(torch.version.cuda)
 quit()
 ```
 
-![测试结果](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704609930657-c8bc16e2-d058-4def-8b78-01f95059bc48.png#averageHue=%232c2c2b&clientId=uc6cbc004-bf5a-4&from=paste&height=134&id=u5a20fe5a&originHeight=168&originWidth=992&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=12161&status=done&style=none&taskId=u70089528-aee4-4617-b1ae-bb61d9f2ed1&title=%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C&width=793.6 "测试结果")
+![测试结果](https://github.com/ChuiXue-Lan/image-host/blob/main/blog-image/YOLOv8_1.1.png "测试结果")
 # YOLOv8的配置
 ## 参考视频：
 参考视频：参考以下视频第四部分
@@ -123,6 +123,6 @@ yolo task=detect mode=predict model=yolov8n.pt conf=0.25 source='ultralytics/ass
 > 可能出现的问题②
 > 问题：在输入终端命令进行推理时一直显示链接github超时<br />原因：没有下载好模型<br />解决方案：可以先到github中下载对应模型（也可以在超时信息中直接找到对应下载网址），再放置在根文件夹下（注意不要放在子文件夹中！）
 #### 测试结果
-![推理测试成功结果](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704615148016-3d660e24-ba2d-4056-9d51-57f2babeea30.png#averageHue=%2344716b&clientId=u21d17978-191b-4&from=paste&height=386&id=uaca3698b&originHeight=482&originWidth=360&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=377036&status=done&style=none&taskId=u31054559-048b-4a4d-9979-7ea7f48ad75&title=%E6%8E%A8%E7%90%86%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F%E7%BB%93%E6%9E%9C&width=288 "推理测试成功结果")
+![推理测试成功结果](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_1.2.png "推理测试成功结果")
 
 

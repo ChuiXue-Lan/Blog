@@ -3,7 +3,7 @@
 # --------------------------------------
 
 nav:
-  logo: # image
+  logo:
   display_title: true
   fixed: false # fixed navigation bar
 
@@ -12,7 +12,7 @@ nav:
 # 图片格式 url(http://xxxxxx.com/xxx.jpg)
 # 颜色（HEX值/RGB值/顔色单词/渐变色)
 # 留空 不显示背景
-background: '#49B202'
+background: "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"
 
 # 背景特效
 canvas_fluttering_ribbon:
@@ -23,13 +23,13 @@ canvas_fluttering_ribbon:
 beautify:
   enable: true
   field: site # site/post
-  title-prefix-icon: '\f0c1'
+  title-prefix-icon: '\f06c'
   title-prefix-icon-color: "#F47466"
 
 # 导航栏
 menu:
   主页: / || fas fa-home
-  知识体系: /konwledge_system/
+  知识体系: /konwledge_system/ || iconfont icon-tixi
   博文 || fa fa-graduation-cap:
     分类: /categories/ || fa fa-archive
     标签: /tags/ || fa fa-tags
@@ -38,8 +38,11 @@ menu:
     # 分享: /shuoshuo/ || fa fa-comments-o
     # 相册: /photos/ || fa fa-camera-retro
     音乐: /music/ || fa fa-music
-    学习资源: /study_source/
+    学习资源: /study_source/ || iconfont icon-shu
+    文章分享: /article/ || iconfont icon-16
+    # 设计网站: /design_web/ || iconfont icon-shejishuju
     # 影视: /movies/ || fas fa-video
+  工具网站: /tools/ || iconfont icon-gongju-
   友链: /links/ || fa fa-link
   # 留言板: /comment/ || fa fa-paper-plane
   # 留言板: /messageboard/ || fa fa-paper-plane
@@ -81,6 +84,15 @@ footer:
   custom_text: 人民有信仰 国家有力量 民族有希望
 footer_bg: true
 
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+inject:
+  head:
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4603591_gbcr4ig17sl.css">
+    - <link rel="stylesheet" href="/Blog/css/custom.css">
+  bottom:
+    # - <script src="xxxx"></script>
 # -----------------------------------------------------------------
 
 # 主页
@@ -125,12 +137,19 @@ post_meta:
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标签
     label: true # true or false 显示描述性文字
+
+# 主页显示
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  pagination_dir: page
 # -----------------------------------------------------------------
 
 # 图片
 # -----------------------------------------------------------------
 # Favicon（网站图标）
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 # 头像
 avatar:
@@ -159,14 +178,31 @@ cover:
   archives_enable: true
   position: both # 封面展示的位置 left/right/both
   # 当没有设置cover时，默认展示的文章封面
-  default_cover: false
+  default_cover: # 不要就设置为false 
     # 当配置多张图片时，会随机选择一张作为 cover. 此时写法为
-    # - https:
-    # - http:
-    # - http:
-    # - http:
-    # - http:
-    # - http:
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049787.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049764.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049738.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125972.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125971.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125970.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125969.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125968.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125967.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125966.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125965.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125964.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125963.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125962.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125961.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125960.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125959.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125958.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125957.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125956.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125955.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125954.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/202407011123967.jpg
 
 # 错误界面
 # Replace Broken Images (替換無法顯示的圖片)
@@ -198,7 +234,7 @@ aside:
       link: https://github.com/ChuiXue-Lan
   card_announcement:
     enable: true
-    content: 欢迎光临小站，这里是我日常工作和学习中收集和整理的总结希望能对你有所帮助！<br/ >本站的内容经过个人加工总结而来，也参考了网友们分享的资料，如有侵权请第一时间联系我，我将及时进行修改或删除
+    content: 欢迎光临小站，这里是我日常工作和学习中收集、整理和编写的文章<br/ >本站的内容经过个人加工总结而来，也参考了网友们分享的资料，如有侵权请联系我及时进行修改或删除😊
 
   card_recent_post:
     enable: true

@@ -3,7 +3,6 @@ title: YOLOv8 - 自定义数据集并训练
 date: 2024-06-28T14:25:06+08:00
 tags: YOLOv8
 categories: Computer Vision
-cover: /img/cover1.jpg
 description: 建立属于自己的数据集，并在其基础上进行训练
 series: YOLOv8(3)
 ---
@@ -14,10 +13,11 @@ series: YOLOv8(3)
 ## 配置文件：default.yaml
 YOLOv8持续更新，项目结构会有变化<br />快捷查找配置文件方式：`ctrl+shift+N`，然后选择所有或文件，之后输入default搜索即可<br />default.yaml中参数可以写在yolo CLI中
 ## 推理命令：
-`yolo task=detect mode=predict model=yolov8n.pt conf=0.25 source='...'`<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704876275154-9230d794-87b1-403f-9af9-2cb2cd7c5859.png#averageHue=%232f2c2b&clientId=u191ae853-7414-4&from=paste&height=49&id=u15d08a90&originHeight=61&originWidth=832&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=15964&status=done&style=none&taskId=u16159061-9838-403d-94e0-98b8eb83ef1&title=&width=665.6)<br />task：任务<br />mode：模式<br />model：选择自己训练的模型或官方模型<br />conf：置信度<br />source：图片/视频路径
+`yolo task=detect mode=predict model=yolov8n.pt conf=0.25 source='...'`<br />![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.0.png)
+task：任务<br />mode：模式<br />model：选择自己训练的模型或官方模型<br />conf：置信度<br />source：图片/视频路径
 # 数据集的结构与制作
 ## datasets文件结构
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704877769520-513622de-f4b3-4eba-9042-4cf42766bebd.png#averageHue=%23f3f0ea&clientId=u1d43b295-eeb4-4&from=paste&height=104&id=uc8c2045d&originHeight=130&originWidth=164&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=2744&status=done&style=none&taskId=u4917e404-7a65-4a06-b041-63362851f23&title=&width=131.2)![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704877729574-8f44aa00-3cc8-4bf1-abfc-fbe7d409b723.png#averageHue=%23f3f0e8&clientId=u1d43b295-eeb4-4&from=paste&height=46&id=UZupN&originHeight=58&originWidth=158&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=1549&status=done&style=none&taskId=uff827d36-79ba-440d-835b-273858a7716&title=&width=126.4)
+![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.1.png)![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.2.png)
 
 > 数据结构
 datasets
@@ -222,7 +222,7 @@ print("valid labels:", valid_labels)
 `WARNING No labels found in D:\Pycharm\ultralytics-main\datasets\train\labels.cache, training may not work correctly.`
 
 > 可能出现的问题 ④
-训练过程中数值出现nan：<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1705821637154-2be11aec-4903-4074-9a07-6802c7d706a0.png#averageHue=%232f2e2d&clientId=ub7ef32d3-46ee-4&from=paste&height=194&id=ufb74a71f&originHeight=243&originWidth=1398&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=36247&status=done&style=none&taskId=u18b12bd2-20b8-4da4-8e7a-7defa5767a0&title=&width=1118.4)<br />这是有问题的，正常应该是一个数值:<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1705826214156-b1562edb-69fd-4e38-b4be-9a9b7dcf7014.png#averageHue=%2331302f&clientId=u0634e01f-0f1e-4&from=paste&height=306&id=u417f7cf8&originHeight=383&originWidth=1383&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=71044&status=done&style=none&taskId=uee45b7f4-73d3-408e-97e0-02b7b7e3706&title=&width=1106.4)<br />解决方案：
+训练过程中数值出现nan：<br />![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.3.png)<br />这是有问题的，正常应该是一个数值:<br />![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.4.png)<br />解决方案：
 ① 设置batch，慢慢试，一般缩小，我使用16可以正常训练<br />② 设置`amp=false`<br />参考文档：<br />[yolov5和yolov8在train时，出现box_loss、cls_loss、dfl_loss为nan，Box(P R mAP50 mAP50-95)为0的解决办法-CSDN博客](https://blog.csdn.net/weixin_42283539/article/details/129988766)
 
 2. 中断训练：按下Ctrl+C键来手动停止训练
@@ -232,7 +232,7 @@ print("valid labels:", valid_labels)
     `yolo task=detect mode=train model=runs/detect/train/weights/last.pt epochs=500 imgsz=640 resume=True workers=2`
     `yolo task=detect mode=val model=runs/detect/train/weights/last.pt<br />yolo detect val model=./runs/detect/train/weights/best.pt`
 
-![获取来自内容根的路径](https://cdn.nlark.com/yuque/0/2024/png/22381734/1704883510382-6c6520e0-6f25-499f-b6a2-ef94afd82ca7.png#averageHue=%233c4145&clientId=u1d43b295-eeb4-4&from=paste&height=229&id=u8059fe5c&originHeight=286&originWidth=726&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=32096&status=done&style=none&taskId=u23298acd-823b-43af-ba71-ccf3325f9aa&title=%E8%8E%B7%E5%8F%96%E6%9D%A5%E8%87%AA%E5%86%85%E5%AE%B9%E6%A0%B9%E7%9A%84%E8%B7%AF%E5%BE%84&width=580.8 "获取来自内容根的路径")
+![获取来自内容根的路径](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.5.png "获取来自内容根的路径")
 ## 利用模型推理
 填写best.pt的路径到model中
 `yolo task=detect mode=predict model=runs/detect/train/weights/best.pt conf=0.25 source='ultralytics/assets/bus.jpg'`
@@ -244,7 +244,7 @@ print("valid labels:", valid_labels)
 并且`yolo detect train model=datasets/yolov8n.yaml data=datasets/data.yaml epochs=500 imgsz=640 resume=True batch=16`
 `yolo task=detect mode=train model=datasets/yolov8n.yaml data=datasets/data.yaml epochs=500 imgsz=640 resume=True batch=2 workers=2`
 [KeyError: ‘depth_multiple’ · Issue #1 · OutBreak-hui/YoloV5-Flexible-and-Inference](https://github.com/OutBreak-hui/YoloV5-Flexible-and-Inference/issues/1)
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/22381734/1706325825017-1d15670a-1598-46db-9f07-8a13fc96677f.png#averageHue=%23272b2c&clientId=u6e79ff92-055a-4&from=paste&height=361&id=ubae11906&originHeight=451&originWidth=1142&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=55033&status=done&style=none&taskId=u57e63f15-cbe0-401f-ad06-2fdd70f59b5&title=&width=913.6)
+![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_2.6.png)
 一个重点报错！！使用以下命令行`yolo detect train model=datasets/yolov8n.yaml data=datasets/data.yaml epochs=500 imgsz=640 resume=True batch=16`
 如果路径正确，却还报错路径找不到，说明 data.yaml 中没有使用绝对路径；或 yolo.yaml 文件 nc 没有写对；或文件命名有问题如 valid 写为 vaid
 
