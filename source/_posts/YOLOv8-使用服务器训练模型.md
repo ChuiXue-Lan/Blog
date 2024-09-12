@@ -1,19 +1,19 @@
 ---
-title: YOLOv8-使用服务器训练模型
+title: YOLOv8 - 使用服务器训练模型
 date: 2024-06-28T15:14:17+08:00
 tags: YOLOv8
 categories: Computer Vision
 description: 使用恒源云服务器训练模型
-series: YOLOv8(2)
+series: YOLOv8
 ---
-训练网站：
+* 训练网站：
 [恒源云_GPUSHARE-恒源智享云](https://www.gpushare.com/center/console)
-用户文档：
+* 用户文档：
 [训练指引 - 恒源云用户文档](https://gpushare.com/docs/best_practices/train/)
 [恒源云(GpuShare)_GPU租用保姆级教程，助力深度学习训练！_恒源云_InfoQ写作社区](https://xie.infoq.cn/article/32b709e6ac9ff73a2ca096a56)
-常见问题：
+* 常见问题：
 [实例相关 - 恒源云用户文档](https://gpushare.com/docs/faq/instance/#sshssh)
-使用流程：
+* 使用流程：
 ![image.png](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/202406291307357.png)
 # 本地下载并安装 FileZilla
 进入官网，按照下图顺序，下载FileZilla
@@ -106,3 +106,6 @@ pip install -r requirements.txt
 [![](https://cdn.nlark.com/yuque/0/2024/png/22381734/1715517903604-a07fa841-5452-4acf-83c5-1b2162b46208.png#averageHue=%23f6f6f5&clientId=u948cb39e-23f0-4&from=paste&id=u17bf58d8&originHeight=1910&originWidth=2940&originalType=url&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&taskId=uae0f288b-2b6c-48fe-8c25-1a043bab841&title=)](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/202406291316037.png)
 **3.将实例/hy-tmp/目录中的数据下载到本地电脑**
 [![](https://cdn.nlark.com/yuque/0/2024/png/22381734/1715517903148-d192a59d-1eac-4be1-87cb-8f0d7b199021.png#averageHue=%23f9f8f7&clientId=u948cb39e-23f0-4&from=paste&id=u30934ff1&originHeight=1294&originWidth=2956&originalType=url&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&taskId=u6c92e411-0833-4168-9e4a-b27c79b0ae5&title=)](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/202406291316994.png)
+
+# 系列文章
+{% series YOLOv8 %}

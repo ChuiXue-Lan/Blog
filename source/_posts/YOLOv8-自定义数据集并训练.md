@@ -4,7 +4,7 @@ date: 2024-06-28T14:25:06+08:00
 tags: YOLOv8
 categories: Computer Vision
 description: 建立属于自己的数据集，并在其基础上进行训练
-series: YOLOv8(3)
+series: YOLOv8
 ---
 参考视频：<br />[【yolov8】从0开始搭建部署YOLOv8，环境安装+推理+自定义数据集搭建与训练，一小时掌握_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fY411y7Xq/)
 > 本文参考以上视频第5部分
@@ -266,3 +266,6 @@ print("valid labels:", valid_labels)
 如果路径正确，却还报错路径找不到，说明 data.yaml 中没有使用绝对路径；或 yolo.yaml 文件 nc 没有写对；或文件命名有问题如 valid 写为 vaid
 <!-- endtab -->
 {% endtabs %} -->
+
+# 系列文章
+{% series YOLOv8 %}

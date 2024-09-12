@@ -42,7 +42,7 @@ menu:
     文章分享: /article/ || iconfont icon-16
     # 设计网站: /design_web/ || iconfont icon-shejishuju
     # 影视: /movies/ || fas fa-video
-  工具网站: /tools/ || iconfont icon-gongju-
+  工具/学习网站: /tools/ || iconfont icon-gongju-
   友链: /links/ || fa fa-link
   # 留言板: /comment/ || fa fa-paper-plane
   # 留言板: /messageboard/ || fa fa-paper-plane
@@ -67,13 +67,22 @@ local_search:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
-  use: Twikoo,Valine
+  use: Twikoo,Giscus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: true
   count: true # Display comment count in top_img
   card_post_count: false # Display comment count in Home Page
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId: https://twikoo-ten-chi.vercel.app/
+  region: 
+  visitor: true
+  option:
+
 
 # footer
 # footer是否显示图片背景(与top_img一致)
@@ -144,6 +153,15 @@ index_generator:
   per_page: 10
   order_by: -date
   pagination_dir: page
+
+# Displays outdated notice for a post (文章过期提醒)
+noticeOutdate:
+  enable: true
+  style: flat # style: simple/flat
+  limit_day: 365 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: 距离上次更新已经过了
+  message_next: 天，文中部分内容可能已经过时，如有疑问，请在下方留言。
 # -----------------------------------------------------------------
 
 # 图片
@@ -183,7 +201,6 @@ cover:
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049787.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049764.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011049738.jpg
-    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125972.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125971.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125970.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125969.jpg
@@ -203,6 +220,33 @@ cover:
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125955.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407011125954.jpg
     - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/202407011123967.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920266.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920264.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920262.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920261.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920260.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920259.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920258.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920257.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920256.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407021920254.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407022028961.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932265.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932264.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932263.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932262.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932261.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932260.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932259.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932258.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932257.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932260.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932255.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932254.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932253.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932251.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932250.jpg
+    - https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/background/202407041932249.jpg
 
 # 错误界面
 # Replace Broken Images (替換無法顯示的圖片)

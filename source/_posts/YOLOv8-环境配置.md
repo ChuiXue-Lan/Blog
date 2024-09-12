@@ -3,9 +3,8 @@ title: YOLOv8 - 环境配置
 date: 2024-06-28T13:25:53+08:00
 tags: YOLOv8
 categories: Computer Vision
-cover: /img/background2.jpg
 description: 在PyTorch虚拟环境中配置YOLOv8，进行每个步骤请仔细阅读本文档！
-series: YOLOv8(1)
+series: YOLOv8
 ---
 > 本文内容：在PyTorch虚拟环境中配置YOLOv8，进行每个步骤请仔细阅读本文档！
 
@@ -125,4 +124,6 @@ yolo task=detect mode=predict model=yolov8n.pt conf=0.25 source='ultralytics/ass
 #### 测试结果
 ![推理测试成功结果](https://raw.githubusercontent.com/ChuiXue-Lan/image-host/main/blog-image/YOLOv8_1.2.png "推理测试成功结果")
 
+# 系列文章
+{% series YOLOv8 %}
 

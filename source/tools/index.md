@@ -1,5 +1,5 @@
 ---
-title: 工具网站
+title: 工具/学习网站
 date: 2024-06-30 17:29:14
 ---
 {% raw %}
@@ -67,14 +67,28 @@ date: 2024-06-30 17:29:14
             "avatar": "https://it-tools.tech/favicon.ico",
             "descr": "Handy tools for developers"
         }]
-    },  {
+    }, {
+         "class_name": "精品课程",
+         "class_desc": "博主强推的UP主！",
+         "link_list": [{
+             "name": "青空の霞光",
+             "link": "https://space.bilibili.com/37737161/?spm_id_from=333.999.0.0",
+             "avatar": "https://i2.hdslb.com/bfs/face/9a7846e7d8dad9a87a9935bcb55bb68963f0e004.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif",
+             "descr": "精品Java视频课程",
+         }]
+    }, {
         "class_name": "工具合集箱",
         "class_desc": "好用的工具合集网站",
         "link_list": [{
             "name": "UU在线工具",
             "link": "https://uutool.cn/type/history/",
             "avatar": "https://uutool.cn/assets/images/favicon.png",
-            "descr": "集合超过工具的网站",
+            "descr": "集合超多工具的网站",
+        }, {
+          "name": "LaTex公式编辑器",
+            "link": "https://www.latexlive.com/home##",
+            "avatar": "/Blog/img/default_img.jpg",
+            "descr": "免费的在线LaTeX公式编辑器，支持图片识别",
         }]
     }, {
         "class_name": "前端设计站",
@@ -143,10 +157,15 @@ date: 2024-06-30 17:29:14
         "class_name": "AI研究所",
         "class_desc": "善用AI，提高效率",
         "link_list": [{
-            "name": "敬请期待...",
-            "link": "https://www.baidu.com/",
-            "avatar": "/Blog/img/default_img.jpg",
-            "descr": "敬请期待...",
+            "name": "ChatGPT",
+            "link": "https://chatgpt.com/",
+            "avatar": "/Blog/img/ico/openai.png",
+            "descr": "最强AI",
+        }, {
+            "name": "Kimi",
+            "link": "https://kimi.moonshot.cn/",
+            "avatar": "https://statics.moonshot.cn/kimi-chat/favicon.ico",
+            "descr": "帮你看更大的世界",
         }]
     }]
     if (false) {
