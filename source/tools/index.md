@@ -62,10 +62,10 @@ date: 2024-06-30 17:29:14
             "avatar": "https://cheatsheets.zip/images/favicon.png?v=1",
             "descr": "速查网站"
         }, {
-            "name": "IT-TOOLS",
-            "link": "https://it-tools.tech/",
-            "avatar": "https://it-tools.tech/favicon.ico",
-            "descr": "Handy tools for developers"
+            "name": "Cool-Papers",
+            "link": "https://papers.cool/",
+            "avatar": "https://papers.cool/static/favicon.ico",
+            "descr": "顶级科研网站！"
         }]
     }, {
          "class_name": "精品课程",
@@ -73,7 +73,7 @@ date: 2024-06-30 17:29:14
          "link_list": [{
              "name": "青空の霞光",
              "link": "https://space.bilibili.com/37737161/?spm_id_from=333.999.0.0",
-             "avatar": "https://i2.hdslb.com/bfs/face/9a7846e7d8dad9a87a9935bcb55bb68963f0e004.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif",
+             "avatar": "/Blog/img/ico/bilibili.png",
              "descr": "精品Java视频课程",
          }]
     }, {
@@ -85,10 +85,20 @@ date: 2024-06-30 17:29:14
             "avatar": "https://uutool.cn/assets/images/favicon.png",
             "descr": "集合超多工具的网站",
         }, {
-          "name": "LaTex公式编辑器",
+            "name": "IT-TOOLS",
+            "link": "https://it-tools.tech/",
+            "avatar": "https://it-tools.tech/favicon.ico",
+            "descr": "Handy tools for developers"
+        }, {
+            "name": "LaTex公式编辑器",
             "link": "https://www.latexlive.com/home##",
             "avatar": "/Blog/img/default_img.jpg",
-            "descr": "免费的在线LaTeX公式编辑器，支持图片识别",
+            "descr": "在线LaTeX公式编辑器，支持图片识别(付费)",
+        }, {
+            "name": "SimpleTex",
+            "link": "https://simpletex.net/ai/latex_ocr",
+            "avatar": "https://simpletex.net/simpletex.ico",
+            "descr": "真·免费的在线LaTeX公式编辑器，支持图片识别",
         }]
     }, {
         "class_name": "前端设计站",
@@ -98,11 +108,6 @@ date: 2024-06-30 17:29:14
             "link": "https://www.iconfont.cn/",
             "avatar": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg",
             "descr": "阿里巴巴矢量图标库"
-        }, {
-            "name": "hatchful",
-            "link": "https://www.shopify.com/zh/tools/logo-maker",
-            "avatar": "https://cdn.shopify.com/static/shopify-favicon.png",
-            "descr": "免费的logo制作器"
         }, {
             "name": "渐变颜色",
             "link": "https://color.oulu.me/",
@@ -119,20 +124,15 @@ date: 2024-06-30 17:29:14
             "avatar": "https://qglimg.qinglm.com/qinggl/favicon.ico",
             "descr": "网页图标在线抓取",
         }, {
-            "name": "Logo设计",
-            "link": "https://www.canva.cn/logos/",
-            "avatar": "https://www.canva.cn/favicon.ico",
-            "descr": "在线制作Logo",
-        }, {
-            "name": "DesignEvo",
-            "link": "https://www.designevo.com/cn/",
-            "avatar": "/Blog/img/default_img.jpg",
-            "descr": "在线制作Logo",
-        }, {
             "name": "Favicon Generator",
             "link": "https://realfavicongenerator.net/",
-            "avatar": "https://realfavicongenerator.net/the_favicon/apple-touch-icon.png?v=zX7n49rwEM",
+            "avatar": "https://realfavicongenerator.net/favicon-48x48.png",
             "descr": "将图片转换为Favicon",
+        }, {
+            "name": "漫步白月光壁纸",
+            "link": "https://wallpaper.abcb.fun/",
+            "avatar": "https://wallpaper.abcb.fun/favicon.ico",
+            "descr": "无限量下载高清壁纸",
         }]
     },  {
         "class_name": "文件处理馆",
@@ -160,12 +160,17 @@ date: 2024-06-30 17:29:14
             "name": "ChatGPT",
             "link": "https://chatgpt.com/",
             "avatar": "/Blog/img/ico/openai.png",
-            "descr": "最强AI",
+            "descr": "第一款AI",
         }, {
             "name": "Kimi",
             "link": "https://kimi.moonshot.cn/",
             "avatar": "https://statics.moonshot.cn/kimi-chat/favicon.ico",
             "descr": "帮你看更大的世界",
+        }, {
+            "name": "豆包",
+            "link": "https://www.doubao.com/chat/",
+            "avatar": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png",
+            "descr": "字节旗下AI智能助手",
         }]
     }]
     if (false) {
